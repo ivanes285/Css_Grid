@@ -1,0 +1,23 @@
+.grid {
+  display: grid; /*aqui esablecemos que estamos trabajando en un grip contenedor que no se ve a simpre vista*/
+
+  /*grid-template-columns: 32% 32% 32%;  // el porcentaje de tu pantalla es 100% en este caso esta divido en 3 columnas
+  grid-template-rows: auto 100%; //aqui establecemos 2 columnas en donde la primera tiene un ancho auto para que se ajuste
+  gap: 14px;  //agregar espacio entre fila y columnas
+  column-gap: 14px;   //para agregar espacio en la columna
+  row-gap: 14px;*/
+
+  /*grid-template-columns: 1fr 1fr 1fr 1fr;  1fr es 1 francion y divide la pantalla en partes iguales de las franciones que quiera*/
+  grid-template-columns: repeat(5,1fr);
+  grid-template-rows: minmax(100px,auto);
+}
+
+.grid div {
+  background: #ecf0f1;
+  padding: 1em;
+}
+
+.grid div:hover {
+  border: 1px solid black;
+  background-color: chartreuse;
+}
